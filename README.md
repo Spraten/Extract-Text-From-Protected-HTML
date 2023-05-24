@@ -8,7 +8,7 @@ NOTE: "Main-Conent" may need to be chagned for some sites
 ```
 let content = Array.from(document.querySelectorAll('.main-content'))
                    .map(el => el.innerText)
-                   .join('\n============================\n');
+                   .join('\n============================\n') + '\n============================\n';
 
 console.log(content);
 
@@ -24,4 +24,5 @@ try {
     console.log('Oops, unable to copy');
 }
 document.body.removeChild(textarea);
+
 ```
